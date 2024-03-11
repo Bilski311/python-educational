@@ -15,8 +15,9 @@ class Vector:
 
     def __abs__(self):
         return math.hypot(self.x, self.y)
+
     def __bool__(self):
-        return bool(abs(self))
+        return bool(self.x or self.y)
 
 
 vector = Vector(2, 1)
